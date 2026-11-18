@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="مختبر عربي للتدريب على تدريس الجغرافيا وبناء المشروعات الرقمية، يعمل محليًا دون حسابات.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>مختبر الجغرافيا الذكي</title>
+<link rel="stylesheet" href="assets/vendor/bootstrap.rtl.min.css"><link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/vendor/lucide.min.js"></script><script defer src="assets/vendor/chart.umd.js"></script>
+<script defer src="assets/vendor/html2canvas.min.js"></script><script defer src="assets/vendor/html2pdf.bundle.min.js"></script>
+<script defer src="assets/js/modules-data.js"></script><script defer src="assets/js/smart-support.js"></script><script defer src="assets/js/assessment.js"></script><script defer src="assets/js/activities.js"></script><script defer src="assets/js/project-builder.js"></script><script defer src="assets/js/dashboard.js"></script><script defer src="assets/js/export.js"></script><script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<a href="#main" class="skip">تخطي إلى المحتوى</a>
+<aside class="sidebar" id="sidebar" aria-label="التنقل الرئيسي">
+<a href="#home" class="brand"><span class="brand-symbol"><i data-lucide="orbit"></i></span><span>مختبر الجغرافيا<small>الذكي · بيئة تدريب تفاعلية</small></span></a>
+<div class="rail-label">مساحة التعلّم</div>
+<nav>
+<a href="#home" data-nav="home"><i data-lucide="layout-dashboard"></i>الرئيسية</a>
+<a href="#training" data-nav="training"><i data-lucide="graduation-cap"></i>التدريب الأكاديمي<span class="rail-count">13</span></a>
+<a href="#support" data-nav="support"><i data-lucide="sparkles"></i>الدعم التعليمي الذكي</a>
+<a href="#dashboard" data-nav="dashboard"><i data-lucide="chart-no-axes-combined"></i>الأداء والمهارات</a>
+<a href="#project" data-nav="project"><i data-lucide="panels-top-left"></i>المشروع الرقمي</a>
+<a href="#lesson" data-nav="lesson"><i data-lucide="notebook-pen"></i>خطة التدريس</a>
+</nav>
+<div class="rail-note"><i data-lucide="shield-check"></i><strong>مساحتك الخاصة للتجربة</strong><p>بياناتك في ذاكرة الجلسة فقط. احفظ ملفًا لاستكمال عملك لاحقًا.</p><button class="btn rail-save" data-action="save-json"><i data-lucide="download"></i>حفظ الجلسة</button></div>
+<div class="rail-footer">صُمّم لتعليم الجغرافيا في العراق<br><span>الإصدار 1.0 · يعمل دون اتصال</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="topbar-title"><button class="icon-btn mobile-toggle" id="menu-toggle" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="sidebar"><i data-lucide="menu"></i></button><span>بيئة المحاكاة التعليمية</span><span class="session-badge"><span></span>جلسة محلية</span></div>
+<div class="top-actions"><label class="role-label" for="role">نمط الاستخدام</label><select id="role" aria-label="نمط الاستخدام"><option value="teacher">معلم</option><option value="student">طالب</option></select><button class="icon-btn" data-action="import-json" title="استيراد جلسة محفوظة" aria-label="استيراد جلسة محفوظة"><i data-lucide="folder-open"></i></button><button class="icon-btn" data-action="help" title="دليل الاستخدام" aria-label="دليل الاستخدام"><i data-lucide="circle-help"></i></button></div></header>
+<main id="main" tabindex="-1"></main>
+<footer class="main-footer">مختبر الجغرافيا الذكي <span>مؤشرات تدريبية داخل المحاكاة · لا تمثل قياسًا بحثيًا معتمدًا</span></footer>
+</div>
+<div class="toast-message" id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<dialog id="dialog"><div id="dialog-body"></div><button class="btn btn-outline-secondary mt-3" data-action="close-dialog">إغلاق</button></dialog>
+<div id="print-root" aria-hidden="true"></div>
+</body></html>

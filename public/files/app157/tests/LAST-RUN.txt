@@ -1,0 +1,29 @@
+✔ Initial state has 3 modules, exactly 13 skills, and no fabricated results (13.494226ms)
+✔ All navigation routes render and role switching preserves current project (112.811752ms)
+✔ Training filters and search return the requested skills (42.044331ms)
+✔ All thirteen activities complete through their actual forms and manual reviews (528.668924ms)
+✔ Wrong answers escalate support, give specific feedback, and retain first-attempt score (63.834292ms)
+✔ A requested hint prevents an independent credit and text does not auto-award quality (34.493118ms)
+✔ Digital evidence is separate from academic quiz scores (52.273547ms)
+✔ All seven project stages validate actual inputs and transition through the wizard (118.92419ms)
+✔ Project fields survive navigation and student mode preserves teacher instructions (55.792078ms)
+✔ Sources, facts and numeric rows are editable and require references and verification (30.137593ms)
+✔ Product editor live preview, ordering, removal and review invalidation work (42.985483ms)
+✔ Rubric uses manual levels and evidence; a level alone does not complete evaluation (28.833043ms)
+✔ Lesson plan can pull training drafts without overwriting existing fields (8.041169ms)
+✔ JSON round trip preserves all project stages, artifacts and training records (38.318767ms)
+✔ JSON import rejects bad schemas, invalid images, spoofed results and prototype pollution (29.622678ms)
+✔ User HTML is displayed as text; dangerous links and colors are not active (13.400471ms)
+✔ All report structures include expected sections and safely escape user text (28.235265ms)
+✔ Large table values are split into flowable paragraphs instead of overflowing table rows (4.933751ms)
+✔ Manual JSON export creates a parseable versioned file and clearing session restores zero metrics (23.943813ms)
+✔ Application source has no storage, network requests, inline event handlers or backend dependency (7.465358ms)
+✔ Manual save refuses a file exceeding the supported import limit (1179.356914ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3176.463393

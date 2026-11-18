@@ -1,0 +1,7 @@
+{
+  "name": "smart-geography-lab-functional-tests",
+  "private": true,
+  "description": "Development-only DOM tests; the web app has no backend or build process.",
+  "scripts": {"test": "node --test functions.test.cjs"},
+  "devDependencies": {"jsdom": "26.1.0"}
+}
